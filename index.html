@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="wrapper-form" id="wrapper-form">
-      <h1><img id="dworl"src="img/world.png">Around the World</h1>
+      <h1><img id="world"src="img/world.png">Around the World</h1>
       <div class="form-search" id="form-search">
         <form class="form" id="form">
           <input class="search" id="search" type="text" placeholder="Buscar País">
@@ -22,7 +22,36 @@
     </div>
   <script src="js/script.js"></script>
 </body>
-</html
+</html>
 
 
 
+
+
+
+<div id="opacidad">
+  <div id="${values[i].name}">
+  <p id="paises">${values[i].name}</p>
+  </div>
+  <div id="${values[i].name}modal" class="modal">
+    <div class="box">
+      <div class="title">
+        <img id="logo" src="./img/Logo.png">
+        <p class="title">${values[i].name}</p>
+        <button id="${values[i].name}boton">X</button>
+        <button>?</button>
+      </div>
+      <img id="imagen" src="${values[i].flag}" alt="${values[i].name}">
+      <div id="detalles">
+        <p><b>País:</b> ${values[i].name} </p>
+        <p><b>Capital:</b> ${values[i].capital} </p>
+        <p><b>Región:</b> ${values[i].region} </p>
+        <p><b>Subregión:</b> ${values[i].subregion} </p>
+        <p><b>Población:</b>  ${values[i].population} </p>
+        <p><b>Área:</b> ${values[i].area} </p>
+        <p id="${values[i].name}idioma"></p>
+        <p id="${values[i].name}divisa"></p>
+      </div>
+    </div>
+  </div>
+</div>
